@@ -1,0 +1,15 @@
+{
+  "person": ["human", "people", "pedestrian", "man", "woman"],
+  "pedestrian": ["person", "human", "people", "man", "woman"],
+  "car": ["automobile", "vehicle", "sedan", "taxi"],
+  "van": ["minivan", "vehicle"],
+  "truck": ["lorry", "vehicle"],
+  "bus": ["coach", "vehicle"],
+  "bicycle": ["bike", "cycle"],
+  "motorcycle": ["motorbike", "scooter", "moped"],
+  "tricycle": ["three wheeler", "3 wheeler"],
+  "awning-tricycle": ["covered tricycle", "awning tricycle"],
+  "boat": ["ship", "vessel"],
+  "ship": ["boat", "vessel"],
+  "airplane": ["aircraft", "plane"]
+}

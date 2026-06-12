@@ -1,0 +1,12 @@
+XS-VID/
+runs/
+.cache/
+__pycache__/
+*.pyc
+*.log
+.venv/
+.env
+*.pt
+*.pth
+*.bin
+*.safetensors

@@ -1,0 +1,11 @@
+# Use this only if you evaluate from YOLO .txt labels without a COCO test.json.
+# Replace these placeholders with the exact XS-VID class names.
+# The line index must equal the YOLO class id.
+class_0
+class_1
+class_2
+class_3
+class_4
+class_5
+class_6
+class_7

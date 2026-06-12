@@ -1,0 +1,32 @@
+
+
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+
+Download XS-VID from scratch:
+
+bash scripts/download_xsvid_hf.sh ./XS-VID
+
+Inspect the dataset:
+
+python tools/inspect_dataset.py --data-root ./XS-VID --split test
+
+Run a 5-image smoke test:
+
+bash scripts/run_smoke_test.sh ./XS-VID ./runs/qwen3vl_xsvid_smoke
+
+Run the full zero-shot test on one GPU or automatic device map:
+
+bash scripts/run_xsvid_test_single_gpu.sh ./XS-VID ./runs/qwen3vl_xsvid_test
+
+Run multi-GPU, for example GPUs 0,4,6,7:
+
+bash scripts/run_xsvid_test_multi_gpu.sh ./XS-VID ./runs/qwen3vl_xsvid_test_parallel 0,4,6,7
+
+The main metrics will be saved to:
+
+runs/.../metrics_summary.json
+runs/.../metrics_by_class.csv
+runs/.../metrics_by_size.csv
